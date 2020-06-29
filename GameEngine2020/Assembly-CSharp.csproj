@@ -82,6 +82,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\CarMovementDs.cs" />
     <Compile Include="Assets\Scripts\ItemSpawn.cs" />
+    <Compile Include="Assets\Scripts\StatusController.cs" />
     <None Include="Assets\race-track-lake\readmore.txt" />
     <None Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
     <None Include="Assets\race-track-lake\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
