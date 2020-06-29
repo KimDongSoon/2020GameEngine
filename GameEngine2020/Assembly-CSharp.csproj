@@ -81,6 +81,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\CarMovementDs.cs" />
+    <Compile Include="Assets\Scripts\CarStatus.cs" />
     <Compile Include="Assets\Scripts\ItemSpawn.cs" />
     <Compile Include="Assets\Scripts\StatusController.cs" />
     <None Include="Assets\race-track-lake\readmore.txt" />

@@ -5391,6 +5391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gas: 100
+  currentGas: 0
   gasIncreaseSpeed: 10
   gasDecreaseTime: 10
   image_Gas: {fileID: 1971779913}
@@ -9699,6 +9700,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1559622049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1568549604 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100042, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091041310}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1568549605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568549604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d04f8486a6e810541849639df54a5793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  go_Status: {fileID: 738270444}
 --- !u!1001 &1586892418
 PrefabInstance:
   m_ObjectHideFlags: 0

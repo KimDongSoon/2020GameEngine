@@ -7,7 +7,7 @@ public class StatusController : MonoBehaviour
 {
     [SerializeField]
     private int gas;        // 연료의 최대 양
-    private int currentGas; // 현재 연료의 양
+    public int currentGas; // 현재 연료의 양
 
     // 연료 증가량
     [SerializeField]
@@ -27,7 +27,7 @@ public class StatusController : MonoBehaviour
 
     // 필요한 이미지
     [SerializeField]
-    private Image image_Gas;
+    public Image image_Gas;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +43,7 @@ public class StatusController : MonoBehaviour
         GasUpdate();
     }
 
-    private void Gas()              // 연료가 닳는 함수
+    public void Gas()              // 연료가 닳는 함수
     {
         if(currentGas > 0)
         {
@@ -57,8 +57,15 @@ public class StatusController : MonoBehaviour
         }
     }
 
+    public void IncreaseGas(int _count)
+    {
+        if (currentGas + _count < gas)
+            currentGas += _count;
+        else
+            currentGas = gas;
+    }
 
-    private void DecreaseGas(int _count)
+    public void DecreaseGas(int _count)
     {
         if (currentGas - _count < 0)
             currentGas = 0;
@@ -66,7 +73,7 @@ public class StatusController : MonoBehaviour
             currentGas = -_count;
     }
 
-    private void GasUpdate()
+    public void GasUpdate()
     {
         image_Gas.fillAmount = (float)currentGas / gas;
     }
