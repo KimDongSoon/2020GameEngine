@@ -38,7 +38,7 @@ namespace UnityStandardAssets.Vehicles.Car
         [SerializeField] private float m_SlipLimit;
         [SerializeField] private float m_BrakeTorque;
 
-        public float speed = 0.0f;
+        public int speed = 0;
 
         //[SerializeField] public 
 
@@ -180,18 +180,18 @@ namespace UnityStandardAssets.Vehicles.Car
 
         private void CapSpeed()
         {
-            speed = m_Rigidbody.velocity.magnitude;
+            speed = (int)m_Rigidbody.velocity.magnitude;
             switch (m_SpeedType)
             {
                 case SpeedType.MPH:
 
-                    speed *= 2.23693629f;
+                    speed *= (int)2.23693629f;
                     if (speed > m_Topspeed)
                         m_Rigidbody.velocity = (m_Topspeed/2.23693629f) * m_Rigidbody.velocity.normalized;
                     break;
 
                 case SpeedType.KPH:
-                    speed *= 3.6f;
+                    speed *= (int)3.6f;
                     if (speed > m_Topspeed)
                         m_Rigidbody.velocity = (m_Topspeed/3.6f) * m_Rigidbody.velocity.normalized;
                     break;
