@@ -10,3 +10,4 @@
 1. 호수 맵 : https://assetstore.unity.com/packages/3d/environments/roadways/lake-race-track-55908
 2. 유니티 제공 차 스텐다드 에셋 : https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-for-unity-2017-3-32351
 3. 기름통 아이템 : https://assetstore.unity.com/packages/3d/props/oil-cans-841
+4. 계기판 png : https://m.bobaedream.co.kr/board/bbs_view/national/1658665
