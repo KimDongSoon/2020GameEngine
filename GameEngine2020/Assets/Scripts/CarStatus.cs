@@ -26,8 +26,8 @@ public class CarStatus : MonoBehaviour
         {
             // 파괴 시키고 차의 연료를 채워줄 것
             go_Status.IncreaseGas(30);
-            Destroy(other);
         }
+        Destroy(other.gameObject);
     }
 
     

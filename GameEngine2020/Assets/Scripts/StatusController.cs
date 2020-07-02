@@ -29,6 +29,11 @@ public class StatusController : MonoBehaviour
     [SerializeField]
     public Image image_Gas;
 
+    [SerializeField]
+    public UnityStandardAssets.Vehicles.Car.CarController carInfo;
+    [SerializeField]
+    public Text speedText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +46,8 @@ public class StatusController : MonoBehaviour
         Gas();
         //DecreaseGas();
         GasUpdate();
+
+        SpeedUpdate();
     }
 
     public void Gas()              // 연료가 닳는 함수
@@ -78,4 +85,8 @@ public class StatusController : MonoBehaviour
         image_Gas.fillAmount = (float)currentGas / gas;
     }
 
+    public void SpeedUpdate()
+    {
+        speedText.text = carInfo.speed.ToString() + "km/h"; 
+    }
 }
